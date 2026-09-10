@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>asdfsadf</name>
+        <label>asdfsadf</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>submit</actionName>
+        <actionType>submit</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>objectId</name>
+            <value>
+                <stringValue>asdfsadfdf</stringValue>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
     <apiVersion>65.0</apiVersion>
     <description>Auto-launched Flow that creates a Lead record. Used for testing simple record creation in auto-launched flow context.</description>
     <interviewLabel>Pharos - Create Lead {!$Flow.CurrentDateTime}</interviewLabel>
@@ -28,6 +44,9 @@
         <label>Create Lead</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
+        <connector>
+            <targetReference>asdfsadf</targetReference>
+        </connector>
         <inputAssignments>
             <field>Company</field>
             <value>
